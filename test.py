@@ -9,6 +9,8 @@ def zigZag(length, height):
 def triangle(height):
     for i in range(height+1):
         print("*"*i)
+    for i in range(height+1):
+        print("*"*(height-i-1))
 
 print(triangle(5))
 
