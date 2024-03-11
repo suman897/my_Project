@@ -10,5 +10,5 @@ def triangle(height):
     for i in range(height+1):
         print("*"*i)
 
-print(triangle(10))
+print(triangle(5))
 
