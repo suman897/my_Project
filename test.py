@@ -10,5 +10,7 @@ def zigZagPattern(length = 5, height = 4):
             print("  "*(length-i), end="*")
             print()
     print("*")
-print(zigZagPattern(5,4))
+
+if __name__ == '__main__':
+    print(zigZagPattern(5,4))
 
