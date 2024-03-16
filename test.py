@@ -1,6 +1,6 @@
 #program to print Zig Zag lines pattern
 class Pattern:
-    def zigZagPattern(length = 5, height = 4):
+    def zigZagPattern(self, length = 5, height = 4):
         length -= 1
         for j in range(height):
             for i in range(length):
@@ -11,6 +11,16 @@ class Pattern:
                 print()
         print("*")
 
+    def user_Input(args):
+        while True:
+            try:
+                return int(input("Enter an integer: "))  
+            except ValueError:
+                print("Invalid input. Please enter an integer.")
+
 if __name__ == '__main__':
-    print(Pattern.zigZagPattern(5,4))
+    p=Pattern()
+    length=p.user_Input()
+    breath=p.user_Input()
+    print(p.zigZagPattern(length,breath))
 
